@@ -51,9 +51,36 @@ void mostrar_recursiva_animal(int i, stAnimal animal[], int v)
         mostrar_recursiva_animal(i+1, animal, v);
     }
 }
-/*
+
 void array_animales_a_archivo(stAnimal animal[], int v, char nomb[])
 {
-    FILE *archi = fopen(nomb, )
+    FILE *archi = fopen(nomb, "wb");
+    stAnimal aux;
+    if(archi)
+    {
+        for(int i = 0; i<v; i++)
+        {
+            if(animal[i].poblacion>100)
+            {
+                aux = animal[i];
+                fwrite(&aux, sizeof(stAnimal), 1, archi);
+            }
+        }
+        fclose(archi);
+    }
 }
-*/
+
+float suma_recursiva(int i, int v, stAnimal ani[])
+{
+    float suma = 0;
+    float suma_total = 0;
+
+    if (i < v)
+    {
+        suma = ani[i].poblacion;
+        suma_total = suma_recursiva(i+1, v, ani) + suma;
+    }
+
+    return suma;
+}
+
