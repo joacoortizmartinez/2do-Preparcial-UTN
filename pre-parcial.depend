@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1748366755 source:d:\facultad\programacion1\pre-parcial\stanimal.c
+	"stAnimal.h"
+	"stEspecie.h"
+
+1748357193 d:\facultad\programacion1\pre-parcial\stanimal.h
+	<stdio.h>
+	<stdlib.h>
+
+1748367930 source:d:\facultad\programacion1\pre-parcial\stespecie.c
+	"stEspecie.h"
+
+1748355523 d:\facultad\programacion1\pre-parcial\stespecie.h
+	<stdio.h>
+	<stdlib.h>
+
+1748366902 source:d:\facultad\programacion1\pre-parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stAnimal.h"
+	"stEspecie.h"
+
